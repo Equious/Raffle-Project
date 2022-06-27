@@ -113,7 +113,7 @@ contract Raffle is VRFConsumerBaseV2, KeeperCompatible, Ownable {
                 uint256(s_raffleState)
             );
         }
-        s_raffleState = RaffleState.CALCULATING;
+        //s_raffleState = RaffleState.CALCULATING;
         uint256 requestId = i_COORDINATOR.requestRandomWords(
             i_gasLane,
             i_subscriptionId,
